@@ -4,7 +4,8 @@ require_once(__ROOT__ . 'local_config/config.php');
 require_once(__ROOT__ . 'php/inc/database.php');
 require_once(__ROOT__ . "php/utilities/general.php");
 
-function create_empty_cart($uf_id, $date_for_shop) {
+function create_empty_cart($uf_id, $date_for_shop)
+{
     if (!$uf_id || !$date_for_shop) {
         return 0;
     }
@@ -14,13 +15,14 @@ function create_empty_cart($uf_id, $date_for_shop) {
             uf_id, date_for_shop
         )
         values (
-            [$uf_id], '[$date_for_shop]'
+            {$uf_id}, '{$date_for_shop}'
         );"
     );
     return $db->last_insert_id();
 }
 
-function getSql_shop_providers() {
+function getSql_shop_providers()
+{
     $sql = "select pv.id, pv.name
         from aixada_provider pv
 	 	join aixada_product p on p.provider_id = pv.id
@@ -38,7 +40,8 @@ function getSql_shop_providers() {
         order by pv.name";
 }
 
-function getSql_shop_categories() {
+function getSql_shop_categories()
+{
     $sql = "select pc.id, pc.description
         from aixada_product_category pc
 	 	join aixada_product p on p.category_id = pc.id
