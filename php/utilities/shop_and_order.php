@@ -14,7 +14,7 @@ function create_empty_cart($uf_id, $date_for_shop) {
             uf_id, date_for_shop
         )
         values (
-            {$uf_id}, '{$date_for_shop}'
+            [$uf_id], '[$date_for_shop]'
         );"
     );
     return $db->last_insert_id();

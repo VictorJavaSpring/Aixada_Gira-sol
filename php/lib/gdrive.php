@@ -15,10 +15,7 @@ set_include_path(__ROOT__.DIRNAME('php/external/ZendGdata-1.12.2/library/.').PAT
 @Zend_Loader::loadClass('Zend_Gdata_Docs');
 
 
-require_once(__ROOT__ . 'php/external/FirePHPCore/lib/FirePHPCore/FirePHP.class.php');
-ob_start(); // Starts FirePHP output buffering
-$firephp = FirePHP::getInstance(true);
-
+ob_start(); // Probably only needed for FirePHP(no longer used)
 
 class gDrive{
     // holds the service tokens
@@ -82,10 +79,6 @@ class gDrive{
     		$url = $sharedLink; 
     	}
     	
-    	global $firephp;
-    	$firephp->log($url, "download url");
-
-    	     
 		$outhandle = fopen($saveFileTo, 'w');
 		
 		if (!$outhandle)
@@ -99,7 +92,6 @@ class gDrive{
 	    
 	    //can't get file name from the download URL of google directly
 	    //$responseURL = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);  
-    	//$firephp->log($responseContent, "curl url");
 	    	
 	    curl_close($ch);
 	    fclose($outhandle);
@@ -114,13 +106,11 @@ class gDrive{
     	$feed = $this->docs->getDocumentListFeed('https://docs.google.com/feeds/documents/private/full/-/spreadsheet');
 
 		$link = false; 
-		global $firephp; 
 		foreach($feed->entries as $entry) { 
 			
 		    if($entry->title->text == $filename){
 		    	$link = $entry->getLink();
 		    	$link = $link[5]->href; 
-		    	$firephp->log($link, "found url for ". $filename);
 		    	break;
 		    }        
 		}
@@ -144,8 +134,6 @@ class gDrive{
 		
 		//need to replace the documents with default?!!!!!!!!!!!!!!
 		$uri = str_replace('feeds/documents/private', 'feeds/default/private', $uri );
-		
-		$firephp->log($uri,"url to delete");
 		
 		$this->docs->delete($uri);
     }

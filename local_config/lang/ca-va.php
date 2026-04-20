@@ -17,7 +17,7 @@ $Text['coop_name'] = configuration_vars::get_instance()->coop_name;
 $Text['currency_sign'] = configuration_vars::get_instance()->currency_sign;
 $Text['currency_desc'] = "Euros";
 $Text['please_select'] = "Seleccioneu...";
-$Text['loading'] = "Si us plau, espere mentre es carreguen les dades...";
+$Text['loading'] = "Si us plau, esperi mentre es carreguen les dades...";
 $Text['search'] = "Cerca";
 $Text['id'] = "id";
 $Text['uf_short'] = "UF";
@@ -367,7 +367,7 @@ $Text['nav_myaccount'] = "El meu compte";
 	$Text['nav_changepwd'] = "Canvia la contrasenya"; 
 	$Text['nav_prev_orders'] = "Compres anteriors";
 
-$Text['nav_logout'] = "Surt/Ix";
+$Text['nav_logout'] = "Sortir/Log out";
 $Text['nav_signedIn'] = "Heu accedit com a ";
 $Text['nav_can_checkout'] = "Podeu validar compres.";
 $Text['nav_try_to_checkout'] = "Comença a validar";

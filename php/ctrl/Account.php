@@ -16,7 +16,7 @@ try{
         case 'getAccounts':
 	        printXML($ao->get_accounts_XML(
                 get_param_int('all', 0), 
-                get_param_array_int('account_types')
+                get_param_array_int('account_types', array())
             ));
             exit;
 
@@ -46,7 +46,7 @@ try{
 	    	
 	    case 'getBalances':
             printXML(
-				$ao->get_balances_XML(get_param_array_int('account_types'))
+				$ao->get_balances_XML(get_param_array_int('account_types', array()))
 			);
             exit;
 

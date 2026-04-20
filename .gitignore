@@ -1,4 +1,20 @@
+# Credencials i configuració sensible
 aixada.host.key
+aixada.host.cert
 local_config/config.php
 local_config/timeline.svg
+
+# Fitxers generats i dades locals
+local_config/dbBkups/
+local_config/export/
+local_config/orders/
+local_config/reports/
+local_config/upload/
+local_config/debug_mail/
+
+# Temporals
 *~
+*.log
+*.swp
+.DS_Store
+Thumbs.db

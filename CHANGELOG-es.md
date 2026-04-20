@@ -2,24 +2,40 @@
 
 ## ¿Cómo actualizar la versión?:
 
-**¡La rama `marter` se considera estable!**  
-*(actualmente no se sigue un sistema de versiones desde la 2.7.0.1)*
+**¡La rama `master` se considera estable!**  
+*(actualment no se sigue un sistema de versions desde la 2.7.0.1)*
 
 Ver en wiki: [Actualización](https://github.com/jmueller17/Aixada/wiki/Actualizaci%C3%B3n)
 
 ***
+# Canvis fins Abril 2026
 
-# Cambios año 2019
+## Millores
+
+### Aixada funciona en PHP 8.2
+  * S'han arreglat diversos problemes, ara també funciona fins PHP8.1 
+  * 8.4: a la plana pral. index.php: Fatal error: Cannot redeclare class DateException in /customers/2/d/4/girasoldesantmarti.net/httpd.www/aixada/php/lib/exceptions.php on line 40
+  * 8.3: Fatal error: Cannot declare class DateException, because the name is already in use in /customers/2/d/4/girasoldesantmarti.net/httpd.www/aixada/php/lib/exceptions.php on line 40
+## Correcció d'errors
+  * Fatal error :"Array and string offset access syntax with curly braces" corregit per versió PHP 7
+  * Arreglar problemes amb `max_input_vars`
+  * Arreglar problemes amb `_order_item_id`
+  * Recorda que l'index.php de l'arrel (/webroots/www/index.php) queda fora del repo i l'hauràs de pujar per FTP quan el modifiquis.
+  * 
+
+
+ 
+# Cambios hasta abril-2019
 
 ## Mejoras
 
 ### Aixada funciona en PHP7.
-  * Se han arreglado diversos problema, ahora también funciona con PHP7.
+  * Se han arreglado diversos problemas, ahora también funciona hasta PHP7.3.
   
 ### Mejoras de seguridad
   * Se ha cambiado la gestión de sesiones.
   * Ahora las sesiones inactivas más de 30 días se cierran automáticamente.
-  * Se han subsanado alguno problemas de seguridad.
+  * Se han subsanado algunos problemas de seguridad.
 
 ***
 

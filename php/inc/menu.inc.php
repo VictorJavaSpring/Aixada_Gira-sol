@@ -3,9 +3,13 @@
 <?php 
     if (is_created_session()) {
         // Help
-        echo '<a href="docs/index_' . get_session_language() . '.php" target="_blank">' .
-            $Text['nav_help'] . '</a> | ';	
-        
+        // Aitor: comento líneas 7 y 8 para añadir enlace a Excel de turnos. 12-03-2019.
+        // echo '<a href="docs/index_' . get_session_language() . '.php" target="_blank">' .
+        //    $Text['nav_help'] . '</a> | ';
+        echo '<a href="https://drive.google.com/open?id=1oYjxifuFH5aZ8dJ2-LXUO63eJKeeJ3a-uF3SlDToMlk" target="_blank">Documents</a> | ';	
+        echo '<a href="https://drive.google.com/open?id=1NSSk0GmtN3eocx-UKHePr9OiPUa-yY_cgwQLViLhQGA" target="_blank">Gestió socis i torns</a> | ';	
+        echo '<a href="/index.php" target="_blank">Lloc Web</a> | ';	
+		
         // Login name and uf_id
         echo  $Text['nav_signedIn'] . " " . get_session_value('login'). 
             " | " . $Text['uf_long'] . ' ' . get_session_value('uf_id') .

@@ -306,7 +306,7 @@ function get_param_array_int($param_name, $default=null, $separator=',') {
 	if ($val !== false) {
 		$str_array = explode($separator, $val);
 	} else {
-		if (!$default) { return null; } // exit
+		if (!is_array($default) && !$default) { return null; } // exit
 		if (is_array($default)) {
 			$str_array = $default;
 		} else {
@@ -1138,7 +1138,7 @@ function get_commissions()
 
 function clean_zeros($value)
 {
-  return ((strpos($value, '.') !== false) ?
+  return (isset($value) && (strpos($value, '.') !== false) ?
 	  rtrim(rtrim($value, '0'), '.') 
 	  : $value);
 }

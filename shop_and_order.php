@@ -48,7 +48,6 @@
 	var what = $.getUrlVar('what');
 
 	//allow pruchase of stock_actual < 0 items? 
-	var preventOutofStock = <?php echo configuration_vars::get_instance()->prevent_out_of_stock_purchase;?>
 
 
 	//detect form submit and prevent page navigation; we use ajax.
@@ -526,7 +525,7 @@
 			$('td.item_price', row).hide();
 		} else {
 			$('textarea', row).hide();
-			if (preventOutofStock == true && orderType == 1 && stockActual <=0) {
+			if (orderType == 1 && stockActual <=0) {
 				$(row).addClass('dim60');
 				$('td', row).addClass('ui-state-highlight');
 				$('input', row).attr('disabled','disabled');
