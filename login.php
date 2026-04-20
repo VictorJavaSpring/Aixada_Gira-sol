@@ -171,7 +171,7 @@ if (!isset($_SESSION)) {
 					</tr>
 					<tr>
 						<td><label class="formLabel" for="password"><?=$Text['pwd'];?>:</label></td>
-						<td><input type="password" class="inputTxtSmall ui-widget-content ui-corner-all" name="password" id="password"/></td>
+						<td><input type="password" class="inputTxtSmall ui-widget-content ui-corner-all" name="password" id="password" autocomplete="current-password"/></td>
 					</tr>
 					<tr>
 						<td colspan="2"><div>&nbsp;</div></td>
