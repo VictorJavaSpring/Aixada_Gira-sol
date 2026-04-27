@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 	include "php/inc/header.inc.php";
 	require_once(__ROOT__.'php/lib/account_writers.php');
 ?>

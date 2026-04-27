@@ -1,4 +1,4 @@
-<?php include "php/inc/header.inc.php" ?>
+﻿<?php include "php/inc/header.inc.php" ?>
 <?php 
 
     $table_name = get_param('table');
@@ -246,3 +246,4 @@
 	</div>
 </body>
 </html>
+

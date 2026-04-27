@@ -15,6 +15,7 @@ if (!isset($_SESSION)) {
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> <?php print $Text['global_title'] . " - " . $Text['ti_login_news']; ?> </title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/aixada_main.css" />
