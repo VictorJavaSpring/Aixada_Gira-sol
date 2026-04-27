@@ -1,0 +1,207 @@
+:root {
+  --verd: #2d6a4f;
+  --verd-clar: #52b788;
+  --groc: #f4a261;
+  --crema: #fefae0;
+  --fosc: #1b2018;
+  --gris: #6c757d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--crema);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--fosc);
+}
+
+header {
+  background-color: var(--verd);
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+
+header p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+.leaf-icon {
+  font-size: 2.5rem;
+}
+
+.search-bar {
+  background: white;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #e0e0d0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-bar input:focus {
+  border-color: var(--verd-clar);
+}
+
+.counter {
+  color: var(--gris);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2.5rem 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+  animation: fadeIn 0.4s ease both;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background: #f0f0e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--fosc);
+  line-height: 1.3;
+}
+
+.card-tag {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tag-verdura {
+  background: #d8f3dc;
+  color: #1b4332;
+}
+
+.tag-fruita {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.tag-llegum {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.tag-altre {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.no-results {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 4rem;
+  color: var(--gris);
+  font-size: 1.1rem;
+}
+
+.btn-tornar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4d8069;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background-color 0.2s;
+  margin-left: auto;
+}
+
+.btn-tornar:hover {
+  background-color: #628f7b;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--gris);
+  font-size: 0.85rem;
+  border-top: 1px solid #e0e0d0;
+  margin-top: 2rem;
+}
