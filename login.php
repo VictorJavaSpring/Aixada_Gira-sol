@@ -18,7 +18,7 @@ if (!isset($_SESSION)) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> <?php print $Text['global_title'] . " - " . $Text['ti_login_news']; ?> </title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/aixada_main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/aixada_main.css?v=<?=time();?>" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/ui-themes/<?= $default_theme; ?>/jqueryui.css" />
 
 
@@ -37,7 +37,7 @@ if (!isset($_SESSION)) {
         }
         ?>
     </style>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css?v=<?=time();?>" />
 
 
 
@@ -246,3 +246,5 @@ if (!isset($_SESSION)) {
 </body>
 
 </html>
+
+

@@ -1,4 +1,4 @@
-<?php include "php/inc/header.inc.php" ?>
+﻿<?php include "php/inc/header.inc.php" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=$language;?>" lang="<?=$language;?>">
 <head>
@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php echo $Text['global_title'] . " - " . $Text['head_ti_import'];?></title>
 	
-	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css" />
+	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css?v=<?=time();?>" />
     <link rel="stylesheet" type="text/css"   media="screen" href="css/ui-themes/smoothness/jquery-ui-1.10.0.custom.min.css"/>
     <link rel="stylesheet" type="text/css"   media="screen" href="css/ui-themes/<?=$default_theme;?>/jqueryui.css"/>
     <style>
@@ -538,3 +538,4 @@
 <!-- / END -->
 </body>
 </html>
+

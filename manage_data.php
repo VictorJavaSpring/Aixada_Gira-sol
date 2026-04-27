@@ -1,4 +1,4 @@
-<?php include "php/inc/header.inc.php" ?>
+﻿<?php include "php/inc/header.inc.php" ?>
 <?php 
 
     $table_name = get_param('table');
@@ -57,7 +57,7 @@
         echo $Text['global_title'] . " - " . $page_title; ?>
     </title>
 
- 	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css" />
+ 	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css?v=<?=time();?>" />
   	<link rel="stylesheet" type="text/css"   media="screen" href="js/fgmenu/fg.menu.css"   />
     <link rel="stylesheet" type="text/css"   media="screen" href="css/ui-themes/<?=$default_theme;?>/jqueryui.css"/>
     <link rel="stylesheet" type="text/css"   media="screen" href="js/jqGrid-4.3.1/css/ui.jqgrid.css"/>
@@ -247,4 +247,5 @@
 	</div>
 </body>
 </html>
+
 

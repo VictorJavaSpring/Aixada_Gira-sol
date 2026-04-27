@@ -1,4 +1,4 @@
-<?php include "php/inc/header.inc.php"; ?>
+﻿<?php include "php/inc/header.inc.php"; ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=$language;?>" lang="<?=$language;?>">
 <head>
@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php echo $Text['global_title'] ." -  " .$Text['head_ti_manage_orders']; ?></title>
 
- 	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css" />
+ 	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css?v=<?=time();?>" />
   	<link rel="stylesheet" type="text/css"   media="screen" href="js/fgmenu/fg.menu.css"   />
     <link rel="stylesheet" type="text/css"   media="screen" href="css/ui-themes/<?=$default_theme;?>/jqueryui.css"/>
     <!-- link rel="stylesheet" type="text/css" 	 media="screen" href="js/tablesorter/themes/blue/style.css"/-->
@@ -2249,6 +2249,7 @@
 <!-- / END -->
 </body>
 </html>
+
 
 
 

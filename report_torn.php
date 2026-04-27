@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 	include "php/inc/header.inc.php";
 	require_once(__ROOT__.'php/lib/account_writers.php');
 ?>
@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php echo $Text['global_title'] . " - " . $Text['head_ti_stats'];?></title>
 
-	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css" />
+	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css?v=<?=time();?>" />
   	<link rel="stylesheet" type="text/css"   media="print"  href="css/print.css" />
   	<link rel="stylesheet" type="text/css"   media="screen" href="js/fgmenu/fg.menu.css"   />
     <link rel="stylesheet" type="text/css"   media="screen" href="css/ui-themes/<?=$default_theme;?>/jqueryui.css"/>
@@ -178,3 +178,4 @@
 <!-- / END -->
 </body>
 </html>
+

@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 	include "php/inc/header.inc.php";
 	require_once(__ROOT__.'php/lib/account_writers.php');
 ?>
@@ -10,7 +10,7 @@
 	<title><?php echo $Text['global_title'] . " - " . $Text['head_ti_validate'] ;?></title>
 
 
-	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css" />
+	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css?v=<?=time();?>" />
   	<link rel="stylesheet" type="text/css"   media="screen" href="js/aixadacart/aixadacart.css?v=<?=aixada_js_version();?>" />
   	<link rel="stylesheet" type="text/css"   media="screen" href="js/fgmenu/fg.menu.css"   />
     <link rel="stylesheet" type="text/css"   media="screen" href="css/ui-themes/<?=$default_theme;?>/jqueryui.css"/>
@@ -990,3 +990,4 @@
 
 </body>
 </html>
+

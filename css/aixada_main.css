@@ -444,30 +444,43 @@ input 					{height:1.6em;}
     div#wrap, div#stagewrap, div#headwrap {
         min-width: auto !important;
         width: 100% !important;
+        overflow-x: hidden;
     }
 
     #menuBgBar {
-        padding: 0;
-        margin-bottom: 5px;
+        padding: 0 !important;
+        margin-bottom: 5px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
     
     #topMenu {
         display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
         overflow-x: auto !important;
+        overflow-y: hidden !important;
         white-space: nowrap !important;
         -webkit-overflow-scrolling: touch;
-        gap: 0;
-        padding: 4px 0;
+        gap: 0 !important;
+        padding: 4px 0 !important;
+        width: 100% !important;
     }
     
+    /* Target all buttons in the menu, including jQuery UI generated ones */
     #topMenu a.menuTop, 
+    #topMenu a.ui-button,
     #topMenu a#navHome,
     #topMenu a#navMyAccount {
         float: none !important;
         flex: 0 0 auto !important;
+        display: inline-flex !important;
+        align-items: center !important;
         margin: 0 2px !important;
-        padding: 0.3em 0.4em !important;
+        padding: 0.3em 0.5em !important;
         font-size: 0.85em !important;
+        height: auto !important;
+        vertical-align: middle !important;
     }
 
     #topMenu .ui-button-text {
@@ -476,20 +489,26 @@ input 					{height:1.6em;}
     
     #logonStatus {
         font-size: 0.7em;
-        padding: 5px;
+        padding: 8px 5px !important;
         text-align: center !important;
         overflow-x: auto;
         white-space: nowrap;
+        background: #f9f9f9;
+        border-bottom: 1px solid #eee;
     }
 
     #logonStatus p {
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
+        gap: 8px;
+        margin: 0;
     }
 
     .header-lang-picker {
         margin: 0 5px;
+        display: inline-flex;
+        vertical-align: middle;
+        gap: 5px;
     }
 }

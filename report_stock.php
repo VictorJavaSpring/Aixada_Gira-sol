@@ -1,4 +1,4 @@
-<?php include "php/inc/header.inc.php" ?>
+﻿<?php include "php/inc/header.inc.php" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=$language;?>" lang="<?=$language;?>">
 <head>
@@ -7,7 +7,7 @@
 	<title><?php echo $Text['global_title'] . " - "  ;?></title>
 
 
-	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css" />
+	<link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css?v=<?=time();?>" />
   	
   	<link rel="stylesheet" type="text/css"   media="screen" href="js/fgmenu/fg.menu.css"   />
     <link rel="stylesheet" type="text/css"   media="screen" href="css/ui-themes/<?=$default_theme;?>/jqueryui.css"/>
@@ -505,3 +505,4 @@
 </div>	
 </body>
 </html>
+

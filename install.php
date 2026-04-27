@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $startResponse = '';
 if (filesize('js/jquery/jquery.js') < 100) {
     copy('js/jquery/jquery-1.7.1.min.js', 'js/jquery/jquery.js');
@@ -29,7 +29,7 @@ require_once __ROOT__ . 'php/inc/authentication.inc.php';
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>INSTALL Aixada</title>
     
-    <link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css" />
+    <link rel="stylesheet" type="text/css"   media="screen" href="css/aixada_main.css?v=<?=time();?>" />
     <link rel="stylesheet" type="text/css"   media="screen" href="css/ui-themes/<?=$default_theme;?>/jqueryui.css"/>
     <script type="text/javascript" src="js/jquery/jquery.js"></script>
     <script type="text/javascript" src="js/jqueryui/jqueryui.js"></script>
@@ -129,3 +129,4 @@ require_once __ROOT__ . 'php/inc/authentication.inc.php';
     </script>
 </body>
 </html>
+
