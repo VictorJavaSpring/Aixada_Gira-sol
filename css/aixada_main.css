@@ -439,50 +439,57 @@ input 					{height:1.6em;}
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
-/* Mobile Responsive Menu */
+/* Mobile Responsive Overrides */
 @media screen and (max-width: 768px) {
+    div#wrap, div#stagewrap, div#headwrap {
+        min-width: auto !important;
+        width: 100% !important;
+    }
+
     #menuBgBar {
-        padding: 2px;
+        padding: 0;
+        margin-bottom: 5px;
     }
     
     #topMenu {
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
+        display: flex !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
         -webkit-overflow-scrolling: touch;
-        gap: 2px;
-        padding-bottom: 4px;
+        gap: 0;
+        padding: 4px 0;
     }
     
-    #topMenu::-webkit-scrollbar {
-        height: 4px;
-    }
-    
-    #topMenu::-webkit-scrollbar-thumb {
-        background: rgba(0,0,0,0.15);
-        border-radius: 4px;
-    }
-
-    #topMenu .ui-button {
+    #topMenu a.menuTop, 
+    #topMenu a#navHome,
+    #topMenu a#navMyAccount {
+        float: none !important;
         flex: 0 0 auto !important;
-        padding: 0.3em 0.5em !important;
+        margin: 0 2px !important;
+        padding: 0.3em 0.4em !important;
         font-size: 0.85em !important;
-        margin: 0 !important;
     }
 
     #topMenu .ui-button-text {
-        padding: 0.1em 0.3em !important;
+        padding: 0.1em 0.2em !important;
     }
     
     #logonStatus {
         font-size: 0.7em;
-        padding: 4px;
+        padding: 5px;
+        text-align: center !important;
         overflow-x: auto;
         white-space: nowrap;
     }
 
-    #logonStatus .header-lang-picker {
+    #logonStatus p {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .header-lang-picker {
         margin: 0 5px;
-        gap: 4px;
     }
 }
