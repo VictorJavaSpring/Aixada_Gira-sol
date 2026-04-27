@@ -122,7 +122,7 @@ if (!isset($_SESSION)) {
                 $(this).removeClass('ui-state-error');
             });
 
-            $('#login, #password').focus(function() {
+            $('#login_input, #password').focus(function() {
                 $('#logonMsg')
                     .text('')
                     .removeClass('ui-state-error');
@@ -173,8 +173,8 @@ if (!isset($_SESSION)) {
                     <form id="login" method="post" class="padding15x10">
                         <table class="tblForms">
                             <tr>
-                                <th scope="row"><label class="formLabel" for="login"><?= $Text['logon']; ?>:</label></th>
-                                <td><input type="text" class="inputTxtSmall ui-widget-content ui-corner-all " name="login" id="login" /></td>
+                                <th scope="row"><label class="formLabel" for="login_input"><?= $Text['logon']; ?>:</label></th>
+                                <td><input type="text" class="inputTxtSmall ui-widget-content ui-corner-all " name="login" id="login_input" /></td>
                             </tr>
                             <tr>
                                 <th scope="row"><label class="formLabel" for="password"><?= $Text['pwd']; ?>:</label></th>
