@@ -35,6 +35,79 @@ if (!isset($_SESSION)) {
             echo "p#logonHeader {background-image: none;}";
         }
         ?>
+        .modern-login-box {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            padding: 2rem 1.5rem;
+            margin: 0 auto;
+            font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+            border: 1px solid #f0f0f0;
+        }
+        .modern-login-title {
+            margin: 0 0 1.5rem 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #4a5568;
+            margin-bottom: 0.4rem;
+        }
+        .modern-login-form input[type="text"],
+        .modern-login-form input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            outline: none;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+            background: #f8fafc;
+        }
+        .modern-login-form input[type="text"]:focus,
+        .modern-login-form input[type="password"]:focus {
+            border-color: #52b788;
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(82, 183, 136, 0.15);
+        }
+        .form-actions {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        .modern-btn {
+            background-color: #2d6a4f;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        .modern-btn:hover {
+            background-color: #1b4332;
+        }
+        .modern-btn:active {
+            transform: translateY(1px);
+        }
+        #logonMsg {
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
     </style>
 
 
@@ -47,7 +120,6 @@ if (!isset($_SESSION)) {
             /**
              *    logon stuff
              */
-            $('#btn_logon').button();
             $('#login').submit(function() {
                 var dataSerial = $(this).serialize();
                 //alert(dataSerial);
@@ -167,33 +239,21 @@ if (!isset($_SESSION)) {
 
 
             <div id="logonWrap" class="aix-layout-splitW20">
-                <div class="ui-widget-content ui-corner-all">
-                    <h4 class="ui-widget-header ui-corner-all"><?php echo $Text['login']; ?></h4>
-                    <p id="logonMsg" class="user_tips  minPadding"></p>
-                    <form id="login" method="post" class="padding15x10">
-                        <table class="tblForms">
-                            <tr>
-                                <th scope="row"><label class="formLabel" for="login_input"><?= $Text['logon']; ?>:</label></th>
-                                <td><input type="text" class="inputTxtSmall ui-widget-content ui-corner-all " name="login" id="login_input" /></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><label class="formLabel" for="password"><?= $Text['pwd']; ?>:</label></th>
-                                <td><input type="password" class="inputTxtSmall ui-widget-content ui-corner-all" name="password" id="password" autocomplete="current-password" /></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <div>&nbsp;</div>
-                                </td>
-                            </tr>
-                            <tr>
-
-                                <td colspan="2">
-                                    <div class="textAlignLeft">
-                                        <button name="submitted" id="btn_logon"><?= $Text['btn_login']; ?></button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                <div class="modern-login-box">
+                    <h4 class="modern-login-title"><?php echo $Text['login']; ?></h4>
+                    <p id="logonMsg" class="user_tips"></p>
+                    <form id="login" method="post" class="modern-login-form">
+                        <div class="form-group">
+                            <label for="login_input"><?= $Text['logon']; ?></label>
+                            <input type="text" name="login" id="login_input" placeholder="<?= $Text['logon']; ?>" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="password"><?= $Text['pwd']; ?></label>
+                            <input type="password" name="password" id="password" placeholder="<?= $Text['pwd']; ?>" autocomplete="current-password" required />
+                        </div>
+                        <div class="form-actions">
+                            <button name="submitted" id="btn_logon" class="modern-btn"><?= $Text['btn_login']; ?></button>
+                        </div>
                         <input type="hidden" name="originating_uri" value="<?= (isset($_REQUEST['originating_uri']) ? $_REQUEST['originating_uri'] : 'login.php') ?>">
                     </form>
                 </div>
