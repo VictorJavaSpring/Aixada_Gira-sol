@@ -399,17 +399,14 @@ input 					{height:1.6em;}
 
 
 
-
-
-
-
 /* Header Language Picker */
 .header-lang-picker {
-    display: inline-flex;
+    display: inline-flex !important;
     vertical-align: middle;
-    gap: 8px;
-    margin-right: 15px;
-    margin-left: 5px;
+    gap: 6px;
+    margin: 0 10px;
+    white-space: nowrap;
+    line-height: 1;
 }
 
 .header-lang-option {
@@ -417,26 +414,27 @@ input 					{height:1.6em;}
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 3px;
+    padding: 2px 4px;
     border: 1px solid transparent;
     border-radius: 4px;
     transition: all 0.2s ease;
-    opacity: 0.6;
+    opacity: 0.75;
 }
 
 .header-lang-option:hover {
     opacity: 1;
-    background: rgba(0,0,0,0.05);
+    background: rgba(0,0,0,0.08);
+    transform: scale(1.1);
 }
 
 .header-lang-option.active {
     opacity: 1;
     border-color: #2d6a4f;
-    background: rgba(45, 106, 79, 0.1);
+    background: rgba(45, 106, 79, 0.15);
 }
 
 .header-lang-option svg {
     display: block;
-    border-radius: 1px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
