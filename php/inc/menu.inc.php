@@ -54,6 +54,8 @@
         // logout
         echo "<a href='javascript:void(null)' id='logoutRef'>" .
             $Text['nav_logout'] . "</a>";
+        
+        echo " <span class='app-version' style='font-size:0.8em; color:#bbb; margin-left:10px;'>v" . aixada_js_version() . "</span>";
     } else {
         echo "userdata not set";
         header('Location:login.php');

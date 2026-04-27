@@ -206,6 +206,9 @@ if (!isset($_SESSION)) {
                         </div>
                         <input type="hidden" name="originating_uri" value="<?= (isset($_REQUEST['originating_uri']) ? $_REQUEST['originating_uri'] : 'login.php') ?>">
                     </form>
+                    <div class="login-footer">
+                        v<?= aixada_js_version(); ?>
+                    </div>
                 </div>
             </div><!-- end logonwrap -->
 
