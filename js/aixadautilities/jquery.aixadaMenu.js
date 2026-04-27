@@ -81,8 +81,8 @@ $(function(){
 		});
 	}
 	
-	$('#lang_select').change(function (){
-   		var new_lang = $("#lang_select option:selected").val(); 
+	$('.header-lang-option').click(function (){
+   		var new_lang = $(this).data('value'); 
 		var rq_uri = window.location;
    		$.ajaxQueue({
    			type: "POST",

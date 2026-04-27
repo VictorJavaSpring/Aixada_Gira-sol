@@ -30,17 +30,22 @@
         // Select lang
         $cfg_use_shop = get_config('use_shop', 'order_and_stock');
         if (get_config('show_menu_language_select', false)) {
-            echo '<select size="0" name="lang_select" id="lang_select">';
+            echo '<div class="header-lang-picker">';
             $keys = get_session_value('language_keys');
-            $names = get_session_value('language_names');
             for ($i=0; $i < count($keys); $i++) {
-                echo '<option';
-                if ($keys[$i] == get_session_value('language')) {
-                    echo ' selected';
+                $k = $keys[$i];
+                $active = ($k == get_session_value('language')) ? 'active' : '';
+                echo '<span class="header-lang-option ' . $active . '" data-value="' . $k . '">';
+                if ($k == 'ca-va') {
+                    echo '🌻';
+                } else if ($k == 'es') {
+                    echo '<svg width="18" height="12" viewBox="0 0 750 500"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg>';
+                } else if ($k == 'en') {
+                    echo '<svg width="18" height="12" viewBox="0 0 60 30"><clipPath id="s2"><path d="M0,0 v30 h60 v-30 z"/></clipPath><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" clip-path="url(#s2)"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#012169" stroke-width="4" clip-path="url(#s2)"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#c8102e" stroke-width="6"/></svg>';
                 }
-                echo ' value="' . $keys[$i]. '">' . $names[$i] . '</option>'; 
+                echo '</span>';
             } 
-            echo '</select> ';
+            echo '</div>';
         }
         echo " | ";
 
