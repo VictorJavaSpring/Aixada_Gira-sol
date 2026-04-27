@@ -32,10 +32,12 @@
         if (get_config('show_menu_language_select', false)) {
             echo '<span class="header-lang-picker">';
             $keys = get_session_value('language_keys');
+            $names = get_session_value('language_names');
             for ($i=0; $i < count($keys); $i++) {
                 $k = $keys[$i];
+                $name = $names[$i];
                 $active = ($k == get_session_value('language')) ? 'active' : '';
-                echo '<span class="header-lang-option ' . $active . '" data-value="' . $k . '">';
+                echo '<span class="header-lang-option ' . $active . '" data-value="' . $k . '" title="' . $name . '">';
                 if ($k == 'ca-va') {
                     echo '<span style="font-size: 1.2em;">🌻</span>';
                 } else if ($k == 'es') {
