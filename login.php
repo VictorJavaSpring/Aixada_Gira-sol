@@ -180,6 +180,9 @@ if (!isset($_SESSION)) {
                             <label for="password"><?= $Text['pwd']; ?></label>
                             <input type="password" name="password" id="password" placeholder="<?= $Text['pwd']; ?>" autocomplete="current-password" required />
                         </div>
+                        <div class="form-actions">
+                            <button name="submitted" id="btn_logon" class="modern-btn"><?= $Text['btn_login']; ?></button>
+                        </div>
                         <div class="form-group">
                             <label><?= $Text['lang']; ?></label>
                             <div class="language-picker">
@@ -200,9 +203,6 @@ if (!isset($_SESSION)) {
                                     <span class="lang-label">English</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-actions">
-                            <button name="submitted" id="btn_logon" class="modern-btn"><?= $Text['btn_login']; ?></button>
                         </div>
                         <input type="hidden" name="originating_uri" value="<?= (isset($_REQUEST['originating_uri']) ? $_REQUEST['originating_uri'] : 'login.php') ?>">
                     </form>

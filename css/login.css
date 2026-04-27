@@ -8,22 +8,23 @@ body {
 #stagewrap {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
-    padding: 1rem;
+    padding: 0.5rem;
     box-sizing: border-box;
 }
 
 #headwrap {
     width: 100%;
     max-width: 450px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 p#logonHeader {
     width: 100%;
-    height: 120px;
+    height: 100px;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
@@ -39,7 +40,7 @@ p#logonHeader span {
     background: rgba(255, 255, 255, 0.98);
     border-radius: 16px;
     box-shadow: 0 12px 40px rgba(45, 106, 79, 0.08);
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1.25rem;
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
@@ -49,8 +50,8 @@ p#logonHeader span {
 }
 
 .modern-login-title {
-    margin: 0 0 2rem 0;
-    font-size: 1.6rem;
+    margin: 0 0 1.25rem 0;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #2d6a4f;
     text-align: center;
@@ -66,23 +67,23 @@ p#logonHeader span {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
 .form-group label {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: #4a5568;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.4rem;
 }
 
 .modern-login-form input[type="text"],
 .modern-login-form input[type="password"] {
     width: 100%;
-    padding: 0.9rem 1rem;
+    padding: 0.75rem 1rem;
     font-size: 1rem;
     border: 2px solid #e2e8f0;
     border-radius: 10px;
@@ -101,7 +102,8 @@ p#logonHeader span {
 }
 
 .form-actions {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
     text-align: center;
 }
 
