@@ -7,22 +7,32 @@ body {
 
 #stagewrap {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
-    padding: 2rem;
+    min-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
-/* Hide extraneous columns to achieve a minimalist, centered look */
-.aix-layout-widget-left-col,
-.aix-layout-widget-center-col {
-    display: none !important;
-}
-
-#logonWrap {
+#headwrap {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    max-width: 450px;
+    margin-bottom: 2rem;
+}
+
+p#logonHeader {
+    width: 100%;
+    height: 120px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 0 auto !important;
+}
+
+/* Hide the cooperative name if it's inside the header to keep it clean */
+p#logonHeader span {
+    display: none;
 }
 
 .modern-login-box {
@@ -31,15 +41,16 @@ body {
     box-shadow: 0 12px 40px rgba(45, 106, 79, 0.08);
     padding: 2.5rem 2rem;
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
+    box-sizing: border-box;
     font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
     border: 1px solid rgba(82, 183, 136, 0.15);
     backdrop-filter: blur(8px);
 }
 
 .modern-login-title {
-    margin: 0 0 1.5rem 0;
-    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #2d6a4f;
     text-align: center;
@@ -51,11 +62,11 @@ body {
 
 .modern-login-title::before {
     content: "🌻";
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .form-group {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -65,13 +76,13 @@ body {
     font-size: 0.9rem;
     font-weight: 600;
     color: #4a5568;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
 }
 
 .modern-login-form input[type="text"],
 .modern-login-form input[type="password"] {
     width: 100%;
-    padding: 0.85rem 1rem;
+    padding: 0.9rem 1rem;
     font-size: 1rem;
     border: 2px solid #e2e8f0;
     border-radius: 10px;
@@ -99,9 +110,9 @@ body {
     color: #ffffff;
     border: none;
     border-radius: 10px;
-    padding: 0.85rem 1.5rem;
-    font-size: 1.05rem;
-    font-weight: 600;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
     cursor: pointer;
     width: 100%;
     transition: all 0.2s ease;
@@ -120,25 +131,28 @@ body {
 }
 
 #logonMsg {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #e53e3e;
+    font-weight: 600;
 }
 
 /* Language Picker Custom UI */
 .language-picker {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-top: 5px;
 }
 
 .lang-option {
     flex: 1;
+    min-width: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 5px;
+    padding: 12px 6px;
     border: 2px solid #e2e8f0;
     border-radius: 12px;
     cursor: pointer;
@@ -156,16 +170,17 @@ body {
     border-color: #2d6a4f;
     background: #ecfdf5;
     box-shadow: 0 4px 12px rgba(45, 106, 79, 0.1);
+    border-width: 2px;
 }
 
 .flag-icon {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 24px;
+    height: 28px;
 }
 
 .flag-icon svg {
