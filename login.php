@@ -35,8 +35,8 @@ if (!isset($_SESSION)) {
             echo "p#logonHeader {background-image: none;}";
         }
         ?>
-        <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
     </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
 
 
 
