@@ -145,8 +145,11 @@ function get_session_login() {
  * returns the language for the logged user
  */
 function get_session_language() {
+    load_session();
     if (is_created_session()) {
         return $_SESSION['userdata']['language'];
+    } else if (isset($_SESSION['temp_language'])) {
+        return $_SESSION['temp_language'];
     } else {
         return configuration_vars::get_instance()->default_language;
     }

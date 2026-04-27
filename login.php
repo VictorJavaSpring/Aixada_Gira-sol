@@ -179,6 +179,14 @@ if (!isset($_SESSION)) {
                             <label for="password"><?= $Text['pwd']; ?></label>
                             <input type="password" name="password" id="password" placeholder="<?= $Text['pwd']; ?>" autocomplete="current-password" required />
                         </div>
+                        <div class="form-group">
+                            <label for="lang_select"><?= $Text['lang']; ?></label>
+                            <select name="lang_select" id="lang_select">
+                                <option value="ca-va" <?= (get_session_language() == 'ca-va' ? 'selected' : '') ?>>Català</option>
+                                <option value="es" <?= (get_session_language() == 'es' ? 'selected' : '') ?>>Español</option>
+                                <option value="en" <?= (get_session_language() == 'en' ? 'selected' : '') ?>>English</option>
+                            </select>
+                        </div>
                         <div class="form-actions">
                             <button name="submitted" id="btn_logon" class="modern-btn"><?= $Text['btn_login']; ?></button>
                         </div>
@@ -202,6 +210,25 @@ if (!isset($_SESSION)) {
         <input type="text" name="email" value="" />
     </div>
 
+    <script type="text/javascript">
+        $(function() {
+            $('#lang_select').change(function() {
+                var new_lang = $(this).val();
+                $.ajax({
+                    type: "POST",
+                    url: "php/ctrl/AixadaSession.php",
+                    data: {
+                        change_lang_to: new_lang,
+                        originating_uri: 'login.php'
+                    },
+                    dataType: "xml",
+                    success: function(xml) {
+                        window.location.reload();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

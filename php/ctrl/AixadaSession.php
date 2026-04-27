@@ -34,6 +34,8 @@ try {
         if (is_created_session()) {
             change_session_language($new_lang);
         } else {
+            load_session();
+            $_SESSION['temp_language'] = $new_lang;
             $uri = 'login.php';
         }
         printXML('<row><navigation>' . $uri . '</navigation></row>');

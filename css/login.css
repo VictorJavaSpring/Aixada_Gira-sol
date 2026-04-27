@@ -69,7 +69,8 @@ body {
 }
 
 .modern-login-form input[type="text"],
-.modern-login-form input[type="password"] {
+.modern-login-form input[type="password"],
+.modern-login-form select {
     width: 100%;
     padding: 0.85rem 1rem;
     font-size: 1rem;
@@ -83,7 +84,8 @@ body {
 }
 
 .modern-login-form input[type="text"]:focus,
-.modern-login-form input[type="password"]:focus {
+.modern-login-form input[type="password"]:focus,
+.modern-login-form select:focus {
     border-color: #52b788;
     background: #ffffff;
     box-shadow: 0 0 0 4px rgba(82, 183, 136, 0.15);
