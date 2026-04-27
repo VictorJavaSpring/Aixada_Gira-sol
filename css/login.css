@@ -69,8 +69,7 @@ body {
 }
 
 .modern-login-form input[type="text"],
-.modern-login-form input[type="password"],
-.modern-login-form select {
+.modern-login-form input[type="password"] {
     width: 100%;
     padding: 0.85rem 1rem;
     font-size: 1rem;
@@ -84,8 +83,7 @@ body {
 }
 
 .modern-login-form input[type="text"]:focus,
-.modern-login-form input[type="password"]:focus,
-.modern-login-form select:focus {
+.modern-login-form input[type="password"]:focus {
     border-color: #52b788;
     background: #ffffff;
     box-shadow: 0 0 0 4px rgba(82, 183, 136, 0.15);
@@ -126,4 +124,64 @@ body {
     text-align: center;
     font-size: 0.9rem;
     color: #e53e3e;
+}
+
+/* Language Picker Custom UI */
+.language-picker {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.lang-option {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #f8fafc;
+}
+
+.lang-option:hover {
+    border-color: #52b788;
+    background: #f0fdf4;
+    transform: translateY(-2px);
+}
+
+.lang-option.active {
+    border-color: #2d6a4f;
+    background: #ecfdf5;
+    box-shadow: 0 4px 12px rgba(45, 106, 79, 0.1);
+}
+
+.flag-icon {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+}
+
+.flag-icon svg {
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.lang-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #4a5568;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.lang-option.active .lang-label {
+    color: #2d6a4f;
 }

@@ -4,7 +4,7 @@ require_once(__ROOT__. 'local_config/config.php');
 
 // English translation file for aixada 
 
-$Text['en'] = 'English';
+$Text['en'] = '🇬🇧 English';
 
 
 $Text['charset'] = "utf-8";

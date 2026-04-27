@@ -5,7 +5,7 @@
 
 require_once __ROOT__ . 'local_config/config.php';
 
-$Text['ca-va'] = 'Català';
+$Text['ca-va'] = '🌻 Català';
 $Text['charset'] = "utf-8";
 $Text['text_dir'] = "ltr"; // ('ltr' significa d'esquerra a dreta, 'rtl' per a escriure de dreta a esquerra)
 

@@ -6,7 +6,7 @@
 
 require_once(__ROOT__. 'local_config/config.php');
 
-$Text['es'] = 'Castellano';
+$Text['es'] = '🇪🇸 Castellano';
 $Text['charset'] = "utf-8";
 $Text['text_dir'] = "ltr"; // ('ltr' for left to right, 'rtl' for right to left)
 

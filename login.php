@@ -180,12 +180,25 @@ if (!isset($_SESSION)) {
                             <input type="password" name="password" id="password" placeholder="<?= $Text['pwd']; ?>" autocomplete="current-password" required />
                         </div>
                         <div class="form-group">
-                            <label for="lang_select"><?= $Text['lang']; ?></label>
-                            <select name="lang_select" id="lang_select">
-                                <option value="ca-va" <?= (get_session_language() == 'ca-va' ? 'selected' : '') ?>>Català</option>
-                                <option value="es" <?= (get_session_language() == 'es' ? 'selected' : '') ?>>Español</option>
-                                <option value="en" <?= (get_session_language() == 'en' ? 'selected' : '') ?>>English</option>
-                            </select>
+                            <label><?= $Text['lang']; ?></label>
+                            <div class="language-picker">
+                                <div class="lang-option <?= (get_session_language() == 'ca-va' ? 'active' : '') ?>" data-value="ca-va" title="Català">
+                                    <span class="flag-icon">🌻</span>
+                                    <span class="lang-label">Català</span>
+                                </div>
+                                <div class="lang-option <?= (get_session_language() == 'es' ? 'active' : '') ?>" data-value="es" title="Español">
+                                    <span class="flag-icon">
+                                        <svg width="20" height="14" viewBox="0 0 750 500"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg>
+                                    </span>
+                                    <span class="lang-label">Español</span>
+                                </div>
+                                <div class="lang-option <?= (get_session_language() == 'en' ? 'active' : '') ?>" data-value="en" title="English">
+                                    <span class="flag-icon">
+                                        <svg width="20" height="14" viewBox="0 0 60 30"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" clip-path="url(#s)"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#012169" stroke-width="4" clip-path="url(#s)"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#c8102e" stroke-width="6"/></svg>
+                                    </span>
+                                    <span class="lang-label">English</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-actions">
                             <button name="submitted" id="btn_logon" class="modern-btn"><?= $Text['btn_login']; ?></button>
@@ -212,8 +225,8 @@ if (!isset($_SESSION)) {
 
     <script type="text/javascript">
         $(function() {
-            $('#lang_select').change(function() {
-                var new_lang = $(this).val();
+            $('.lang-option').click(function() {
+                var new_lang = $(this).data('value');
                 $.ajax({
                     type: "POST",
                     url: "php/ctrl/AixadaSession.php",
