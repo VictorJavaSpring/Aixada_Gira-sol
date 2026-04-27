@@ -367,7 +367,7 @@ $Text['nav_myaccount_account'] = "Diners";
 $Text['nav_changepwd'] = "Canvia la contrasenya";
 $Text['nav_prev_orders'] = "Compres anteriors";
 
-$Text['nav_logout'] = "Sortir/Log out";
+$Text['nav_logout'] = "Sortir";
 $Text['nav_signedIn'] = "Heu accedit com a ";
 $Text['nav_can_checkout'] = "Podeu validar compres.";
 $Text['nav_try_to_checkout'] = "Comença a validar";

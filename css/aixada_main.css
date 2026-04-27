@@ -438,3 +438,51 @@ input 					{height:1.6em;}
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
+
+/* Mobile Responsive Menu */
+@media screen and (max-width: 768px) {
+    #menuBgBar {
+        padding: 2px;
+    }
+    
+    #topMenu {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        gap: 2px;
+        padding-bottom: 4px;
+    }
+    
+    #topMenu::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    #topMenu::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.15);
+        border-radius: 4px;
+    }
+
+    #topMenu .ui-button {
+        flex: 0 0 auto !important;
+        padding: 0.3em 0.5em !important;
+        font-size: 0.85em !important;
+        margin: 0 !important;
+    }
+
+    #topMenu .ui-button-text {
+        padding: 0.1em 0.3em !important;
+    }
+    
+    #logonStatus {
+        font-size: 0.7em;
+        padding: 4px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #logonStatus .header-lang-picker {
+        margin: 0 5px;
+        gap: 4px;
+    }
+}
