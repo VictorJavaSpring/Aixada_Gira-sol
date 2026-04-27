@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $startResponse = '';
 if (filesize('js/jquery/jquery.js') < 100) {
     copy('js/jquery/jquery-1.7.1.min.js', 'js/jquery/jquery.js');
