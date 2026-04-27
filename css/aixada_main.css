@@ -467,7 +467,6 @@ input 					{height:1.6em;}
         width: 100% !important;
     }
     
-    /* Target all buttons in the menu, including jQuery UI generated ones */
     #topMenu a.menuTop, 
     #topMenu a.ui-button,
     #topMenu a#navHome,
@@ -510,5 +509,105 @@ input 					{height:1.6em;}
         display: inline-flex;
         vertical-align: middle;
         gap: 5px;
+    }
+
+    /* General responsive fixes for all pages */
+    .floatLeft, .floatRight {
+        float: none !important;
+        width: 100% !important;
+        margin: 0 0 15px 0 !important;
+    }
+
+    .aix-layout-splitW80, .aix-layout-splitW60, .aix-layout-splitW50, 
+    .aix-layout-splitW40, .aix-layout-splitW30, .aix-layout-splitW20 {
+        width: 100% !important;
+    }
+
+    /* Table Fixes: Enable horizontal scrolling for any table that is too wide */
+    table {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Prevent text wrapping in table headers to keep them readable while scrolling */
+    table th {
+        white-space: nowrap !important;
+    }
+
+    /* Tab and Button Group Fixes */
+    .ol_selectable {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 5px !important;
+    }
+
+    .ol_selectable li {
+        margin: 0 !important;
+        flex: 1 1 auto !important;
+        text-align: center !important;
+    }
+
+    .ui-tabs .ui-tabs-nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .ui-tabs .ui-tabs-nav li {
+        flex: 1 1 auto !important;
+        float: none !important;
+    }
+
+    /* Adjust specific elements from Shop and Order */
+    #titleLeftCol, #titleRightCol {
+        width: 100% !important;
+        float: none !important;
+    }
+
+    #titlewrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titleLeftCol img {
+        height: 40px !important;
+        width: auto !important;
+    }
+
+    h1 {
+        font-size: 1.2em !important;
+        margin-top: 10px !important;
+    }
+
+    /* Date selector buttons */
+    #dateSelect li {
+        width: 48% !important;
+        box-sizing: border-box;
+    }
+
+    /* Fix overlapping in product list tabs */
+    .ui-tabs-panel {
+        padding: 0.5em 0.2em !important;
+    }
+
+    /* Ensure form inputs are easy to tap */
+    input[type="text"], input[type="password"], select {
+        font-size: 16px !important; /* Prevents auto-zoom on iOS */
+        padding: 8px !important;
+        height: auto !important;
+    }
+
+    /* Fix floating cart */
+    #cart_favorite_menu {
+        float: none !important;
+        margin: 10px 0 !important;
+        display: flex !important;
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    .fg-button {
+        padding: 0.5em 1em !important;
     }
 }
