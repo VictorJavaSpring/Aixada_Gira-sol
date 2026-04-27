@@ -18,3 +18,4 @@ local_config/debug_mail/
 *.swp
 .DS_Store
 Thumbs.db
+index.backup.php
