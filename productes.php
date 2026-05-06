@@ -35,300 +35,350 @@
     const productes = [{
         nom: "All tendre",
         emoji: "🧄",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-jzTjQlU9nJERM7qbAmEB7KR4Sth3yk.png",
         tag: "verdura",
         cerca: "all tendre"
       },
       {
         nom: "Alls secs",
         emoji: "🧄",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-jzTjQlU9nJERM7qbAmEB7KR4Sth3yk.png",
         tag: "verdura",
         cerca: "alls secs"
       },
       {
         nom: "Alvocat",
         emoji: "🥑",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-dB0Lnna9SnPK6FovcZxwjRtkxgSPBu.png",
         tag: "fruita",
         cerca: "alvocat"
       },
       {
         nom: "Ametlles",
         emoji: "🌰",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-v4QqtgUT65fjxf4afTk8FCkybNYAiq.png",
         tag: "altre",
         cerca: "ametlles"
       },
       {
         nom: "Api (es cobra a pes)",
         emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-TPM0SNGrMP0dC2LwkEJXtheSpyEV30.png",
         tag: "verdura",
         cerca: "api"
       },
       {
         nom: "Aranja",
         emoji: "🍊",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-id2bjNWhceyyEfRKFC99ipUcMSqfio.png",
         tag: "fruita",
         cerca: "aranja taronja"
       },
       {
         nom: "Bleda",
         emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-emC1BR5ljWANScSXgr4K8nwvA1f0aW.png",
         tag: "verdura",
         cerca: "bleda"
       },
       {
         nom: "Bròcoli",
         emoji: "🥦",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-frBicIvOqd2UwplkxPdk4hRXZZUI5N.png",
         tag: "verdura",
         cerca: "brocoli"
       },
       {
         nom: "Carbassa",
         emoji: "🎃",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-sldqRei48P7Oro9TRLnO9cCrgL1QSI.png",
         tag: "verdura",
         cerca: "carbassa"
       },
       {
         nom: "Cacauet (es cobra a pes)",
         emoji: "🥜",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-vEwrHCppAh1YMVuphJJCv0ELPU5GNi.png",
         tag: "llegum",
         cerca: "cacauet"
       },
       {
         nom: "Carbassó",
         emoji: "🥒",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-OqLZ6aGzYeNW3tFXYIUOTohBKTSwaW.png",
         tag: "verdura",
         cerca: "carbasso"
       },
       {
         nom: "Carxofa",
         emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-1YEICMUBE0cs3ZFWbytrmquTVGWbsK.png",
         tag: "verdura",
         cerca: "carxofa"
       },
       {
         nom: "Ceba seca",
         emoji: "🧅",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-Ee5nKECUBZfTaLG5V0Vmtr1yn1e0Vm.png",
         tag: "verdura",
         cerca: "ceba seca"
       },
       {
         nom: "Ceba tendra",
         emoji: "🧅",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-Ee5nKECUBZfTaLG5V0Vmtr1yn1e0Vm.png",
         tag: "verdura",
         cerca: "ceba tendra"
       },
       {
         nom: "Cigrons",
         emoji: "🫘",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-45yrSlpcFonj96OytD4ZLWvGpV9Fk2.png",
         tag: "llegum",
         cerca: "cigrons"
       },
       {
         nom: "Cogombre",
         emoji: "🥒",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-tK5vlI28NmKvwFsFdF1z704JhQVBJ0.png",
         tag: "verdura",
         cerca: "cogombre"
       },
       {
         nom: "Col Milà",
         emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-rXyreG0Sz8i9iLVpkX784JgqMjICxP.png",
         tag: "verdura",
         cerca: "col mila"
       },
       {
         nom: "Col Picuda",
         emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-rXyreG0Sz8i9iLVpkX784JgqMjICxP.png",
         tag: "verdura",
         cerca: "col picuda"
       },
       {
         nom: "Col Rave",
         emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-AXqhyWpNrdtQgGwC1jWTmZhQYghuCf.png",
         tag: "verdura",
         cerca: "col rave"
       },
       {
         nom: "Enciam",
         emoji: "🥗",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-ceSUp8RPCc5EJEpEDSYBu9yH8pjNN5.png",
         tag: "verdura",
         cerca: "enciam"
       },
       {
         nom: "Espàrrec",
         emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-5t2FNENaP3SXP3MGLOSOBuatSt6RKU.png",
         tag: "verdura",
         cerca: "esparrec"
       },
       {
         nom: "Espinac",
         emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-YOHxnWgKxTUQknXCGBBSQmI9XcJ1WN.png",
         tag: "verdura",
         cerca: "espinac"
       },
       {
         nom: "Faves",
         emoji: "🫘",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-ku2a80Q80m0Vhv6RzLIOW70Zlu06zN.png",
         tag: "llegum",
         cerca: "faves"
       },
       {
         nom: "Herbes pel caldo",
         emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-eLerAjlyuXl0qTB4eiPNVcK8CRDk7v.png",
         tag: "altre",
         cerca: "herbes caldo"
       },
       {
         nom: "Kale Nero di Toscana",
         emoji: "🥬",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-emC1BR5ljWANScSXgr4K8nwvA1f0aW.png",
         tag: "verdura",
         cerca: "kale nero toscana"
       },
       {
         nom: "Kiwi",
         emoji: "🥝",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-TVCwuOTeNqH2vGlDuJretqMcHhLHIu.png",
         tag: "fruita",
         cerca: "kiwi"
       },
       {
         nom: "Llenties",
         emoji: "🫘",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-soaagOHsLdKrSP08d7KFAKucpvYiXW.png",
         tag: "llegum",
         cerca: "llenties"
       },
       {
         nom: "Llimona",
         emoji: "🍋",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-zxHDTN58ruTW0e6TaKl8FnSuwlai3o.png",
         tag: "fruita",
         cerca: "llimona"
       },
       {
         nom: "Maduixot",
         emoji: "🍓",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-Lo6Z6zumG1tr01pDUmtp1bOwDlTeIE.png",
         tag: "fruita",
         cerca: "maduixot"
       },
       {
         nom: "Mandarina",
         emoji: "🍊",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-79XLKwCuOZGHdVcOlEApISx6x2nVd2.png",
         tag: "fruita",
         cerca: "mandarina"
       },
       {
         nom: "Ortanique",
         emoji: "🍊",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-79XLKwCuOZGHdVcOlEApISx6x2nVd2.png",
         tag: "fruita",
         cerca: "ortanique"
       },
       {
         nom: "Mongeta del Ganxet",
         emoji: "🫘",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-ku2a80Q80m0Vhv6RzLIOW70Zlu06zN.png",
         tag: "llegum",
         cerca: "mongeta ganxet"
       },
       {
         nom: "Moniato",
         emoji: "🍠",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-bFcw4aOrwL0LgKbW6PYUxw8nxPxyqe.png",
         tag: "verdura",
         cerca: "moniato"
       },
       {
         nom: "Nap granel",
         emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-09DC2J2e0MKOqQiC4FKaNaERcH1CV1.png",
         tag: "verdura",
         cerca: "nap"
       },
       {
         nom: "Nous",
         emoji: "🌰",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-0wWd0fmMGDqRaxwYng6SmU0su3RmJm.png",
         tag: "altre",
         cerca: "nous"
       },
       {
         nom: "Ous (Mitja dotzena)",
         emoji: "🥚",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-7uzNN0YrOHMfME1JRXstP9EgkWw5lf.png",
         tag: "altre",
         cerca: "ous"
       },
       {
         nom: "Pastanaga (manat)",
         emoji: "🥕",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SDWokE9iDTl76OZmABSCuDGBtgWNbx.png",
         tag: "verdura",
         cerca: "pastanaga manat"
       },
       {
         nom: "Pastanaga granel",
         emoji: "🥕",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SDWokE9iDTl76OZmABSCuDGBtgWNbx.png",
         tag: "verdura",
         cerca: "pastanaga granel"
       },
       {
         nom: "Patata Àgria",
         emoji: "🥔",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SxGhEwCGCF6pg0bm8ZqXN8NXOpt7nV.png",
         tag: "verdura",
         cerca: "patata agria"
       },
       {
         nom: "Patata Rudolph",
         emoji: "🥔",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-SxGhEwCGCF6pg0bm8ZqXN8NXOpt7nV.png",
         tag: "verdura",
         cerca: "patata rudolph"
       },
       {
         nom: "Pera Conference",
         emoji: "🍐",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-QLcSvTeGtIXvxzKceaKAASQPbiEYW3.png",
         tag: "fruita",
         cerca: "pera conference"
       },
       {
         nom: "Pèsol",
         emoji: "🫛",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-lw7zQS9zQOSLpNXCKfXRnXIRGn9dDC.png",
         tag: "llegum",
         cerca: "pesol"
       },
       {
         nom: "Plàtan",
         emoji: "🍌",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-mLIzz1a3BcyWlL2gqM5P7hK76WDldX.png",
         tag: "fruita",
         cerca: "platan"
       },
       {
         nom: "Poma Fuji",
         emoji: "🍎",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-PGsquqsWiNY7oX6G4drTdq36ieTBjG.png",
         tag: "fruita",
         cerca: "poma fuji"
       },
       {
         nom: "Poma Golden",
         emoji: "🍎",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-PGsquqsWiNY7oX6G4drTdq36ieTBjG.png",
         tag: "fruita",
         cerca: "poma golden"
       },
       {
         nom: "Poma Story",
         emoji: "🍎",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-PGsquqsWiNY7oX6G4drTdq36ieTBjG.png",
         tag: "fruita",
         cerca: "poma story"
       },
       {
         nom: "Porro (manat)",
         emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-E0k709x4ZycrFd9xw2SspVkGfjE6Dm.png",
         tag: "verdura",
         cerca: "porro"
       },
       {
         nom: "Rave (manat)",
         emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-09DC2J2e0MKOqQiC4FKaNaERcH1CV1.png",
         tag: "verdura",
         cerca: "rave"
       },
       {
         nom: "Remolatxa",
         emoji: "🫚",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-OKP18GwrnhfovB1vM1t71aUMk1FQFN.png",
         tag: "verdura",
         cerca: "remolatxa"
       },
       {
         nom: "Rotlle de 300 bosses compostables 30x40",
         emoji: "♻️",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-1kzlhXN3lasEQYBtwdeQrzzhBEwurX.png",
         tag: "altre",
         cerca: "bosses compostables"
       },
@@ -341,12 +391,14 @@
       {
         nom: "Taronja",
         emoji: "🍊",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-id2bjNWhceyyEfRKFC99ipUcMSqfio.png",
         tag: "fruita",
         cerca: "taronja"
       },
       {
         nom: "Tomacó",
         emoji: "🍅",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-v4Bz5uvOIDciAdqa3qIpabpC0VrOkp.png",
         tag: "verdura",
         cerca: "tomaco tomaquet"
       },
@@ -359,6 +411,7 @@
       {
         nom: "Xirivia",
         emoji: "🌿",
+        icon: "https://lftz25oez4aqbxpq.public.blob.vercel-storage.com/image-LYcasyzw3AXY5BIbywp0rBWrVqLIIL.png",
         tag: "verdura",
         cerca: "xirivia"
       },
@@ -383,7 +436,7 @@
 
       grid.innerHTML = llista.map((p, i) => `
     <div class="card" style="animation-delay: ${i * 0.03}s">
-      <div class="card-img">${p.emoji}</div>
+      <div class="card-img">${p.icon ? \`<img src="\${p.icon}" alt="\${p.nom}">\` : p.emoji}</div>
       <div class="card-body">
         <div class="card-name">${p.nom}</div>
         <span class="card-tag tag-${p.tag}">${tagLabels[p.tag]}</span>
