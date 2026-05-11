@@ -436,7 +436,7 @@
 
       grid.innerHTML = llista.map((p, i) => `
     <div class="card" style="animation-delay: ${i * 0.03}s">
-      <div class="card-img">${p.icon ? \`<img src="\${p.icon}" alt="\${p.nom}">\` : p.emoji}</div>
+      <div class="card-img">${p.icon ? '<img src="' + p.icon + '" alt="' + p.nom + '">' : p.emoji}</div>
       <div class="card-body">
         <div class="card-name">${p.nom}</div>
         <span class="card-tag tag-${p.tag}">${tagLabels[p.tag]}</span>
